@@ -2,7 +2,17 @@
 <html lang="en">
 <head>
     <style>
-      .center {
+        *{
+    padding: 1rem;
+}
+.row{
+    display: flex;
+    background-color: antiquewhite;
+    font-size: larger;
+    font-weight: bolder;
+    margin: 2rem;
+}
+.center {
     display: flex;
     justify-content: center;
     background-color: antiquewhite;
@@ -62,9 +72,50 @@ h2{
     
     justify-content: center;
 }
+
+
+.ccolumn{
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    font-size: larger;
+    color: brown;
+}
+
+.ccenter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: antiquewhite;
+    font-size: larger;
+}
+
+.cstart {
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    align-items: flex-start;
+    font-size: larger
+}
+.cend {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: antiquewhite;
+    font-size: larger;
+}
+
     </style>
 </head>
 <body>
+    <h2>Flex Row</h2>
+    <div class="row">
+        <p>One</p>
+        &nbsp;
+        <p>Two</p>
+        &nbsp;
+        <p>Three</p>
+    </div>
     <h2>Flex center</h2>
 
     <div class="center">
@@ -134,6 +185,47 @@ h2{
         <p>Three</p>
     </div>
     <hr>
+    <hr><hr>
+
+    <h2>Flex Column</h2>
+    <div class="ccolumn">
+        <p>One</p>
+        &nbsp;
+        <p>Two </p>
+        &nbsp;
+        <p>Three</p>
+    </div>
+    <hr>
+
+
+    <h2>Column center</h2>
+    <div class="ccenter">
+        <p>One</p>
+        &nbsp;
+        <p>Two </p>
+        &nbsp;
+        <p>Three</p>
+    </div>
+    <hr>
+
+
+    <h2>Column flex-start</h2>
+    <div class="cstart">
+        <p>One</p>
+        &nbsp;
+        <p>Two </p>
+        &nbsp;
+        <p>Three</p>
+    </div>
+
+    <h2>Column flex-end</h2>
+    <div class="cend">
+        <p>One</p>
+        &nbsp;
+        <p>Two </p>
+        &nbsp;
+        <p>Three</p>
+    </div>
     
 </body>
 </html>
